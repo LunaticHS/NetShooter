@@ -21,7 +21,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "PlayerState")
 	void AddDeath(float DeathDelta);
-	
 
 	UFUNCTION(BlueprintCallable, Category = "PlayerState")
 	int GetScore();

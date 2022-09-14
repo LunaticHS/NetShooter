@@ -9,8 +9,14 @@
 void ASGameState::OnRep_WaveState(EWaveState OldState)
 {
 	WaveStateChanged(WaveState, OldState);
+	
+	GEngine->AddOnScreenDebugMessage(0, 1.0f, FColor::Red, TEXT("OK2"));
 }
 
+float ASGameState::nowtime()
+{
+	return GetServerWorldTimeSeconds();
+}
 
 void ASGameState::SetWaveState(EWaveState NewState)
 {

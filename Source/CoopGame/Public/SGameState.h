@@ -37,6 +37,9 @@ protected:
 	UFUNCTION()
 	void OnRep_WaveState(EWaveState OldState);
 
+	UFUNCTION(BlueprintCallable)
+	float nowtime();
+
 	UFUNCTION(BlueprintImplementableEvent, Category = "GameState")
 	void WaveStateChanged(EWaveState NewState, EWaveState OldState);
 

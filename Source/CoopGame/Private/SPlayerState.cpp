@@ -12,6 +12,7 @@ void ASPlayerState::AddScore(float ScoreDelta)
 
 void ASPlayerState::AddDeath(float DeathDelta)
 {
+	GEngine->AddOnScreenDebugMessage(0, 1.0f, FColor::Red, TEXT("OK3"));
 	DeathCnt += DeathDelta;
 }
 
@@ -24,3 +25,4 @@ int ASPlayerState::GetScore()
 {
 	return Score;
 }
+
